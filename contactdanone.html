@@ -1,51 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<title> Contact </title>
-</head>
-<body>
+<html>
+  <head lang="en">
+  <title>Contact</title>
+  <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Helvetica">
 <style type = "text/css">
 		body {
-			background-color: orange;
+			background-color: white;
 			padding: 20px;
-			font-family: Futura, condensed extrabold, sans-serif}
-		
+			font-family: Helvetica, san-serif;}
+		.two {
+			color: red;
+			font-size: 250%;
+			}
+		input {
+				font-size: 120%;
+				color: #5a5854;
+				background-color: #f2f2f2;
+				border: 1px solid #bdbdbd;
+				border-radius: 5px;
+				padding: 5px 10px 5px 10px;
+				background-repeat: no-repeat;
+				background-position: 8px 9px;
+				display: block;
+				margin-bottom: 10px;}
+			input#submit {
+				color: #444444;
+				text-shadow: 0px 1px 1px #ffffff;
+				border-bottom: 2px solid #b2b2b2;
+				background-color: #b9e4e3;
+				background: -webkit-gradient(linear, left top, left bottom, from(#beeae9), to(#a8cfce));
+				background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+				background: -o-linear-gradient(top, #beeae9, #a8cfce);
+				background: -ms-linear-gradient(top, #beeae9, #a8cfce);}
+			input#submit:hover {
+				color: #333333;
+				border: 1px solid #a4a4a4;
+				border-top: 2px solid #b2b2b2;
+				background-color: #a0dbc4;
+				background: -webkit-gradient(linear, left top, left bottom, from(#a8cfce), to(#beeae9));
+				background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+				background: -o-linear-gradient(top, #a8cfce, #beeae9);
+				background: -ms-linear-gradient(top, #a8cfce, #beeae9);}
 			
-	</style>
+		
+		
+		
+</style>
+</head>
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+         document.getElementById('display').innerHTML = 
+                   document.getElementById("user_input").value;
+    }
+  </script>
+  
+  
 
+  </head>
+<body>
 
-
-<h1> Contact </h1>
-	<p> Thank you for perusing my portfolio website!<br /> If you have any thoughts, feelings or concerns regarding the website, please submit your name below.
+<h1><strong>CONTACT<strong></h1>
+	<p> Thank you for perusing my portfolio website!<br /> For further correspondence, please submit your name below.
 	</p>
 
-<p>Enter your name in the field, then click "Submit":</p>
+  <form>
+    <h2><label><b>Enter Your Name</b></label></h2>
+    <input type="text" name="message" id="user_input">
+  </form>
 
-<input type="text" id="myText" value="Some text...">
-
-<p>Click the "Submit" button to get the text in the text field.</p>
-
-<button onclick="myFunction()">Submit</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myText").value;
-    document.getElementById("demo").innerHTML = x;
-    }
-
-    
-
-</script>
+  	<input type="submit" onclick="showInput();"><br/>
+  	<h2><label><b>Your input:</b></label></h2>
+  <p class="two"><i><b><span id='display'></b></i></span></p>
+  
+  
 
 
-<p> 
-<a href= "index.html"> Home </a>
-		</p>
-
-<script type="text/javascript" src="javascript.js"></script
 
 
+
+  <h3><i><a href= "curetonportfolio.html"> Home </a>
+		</i></h3>
+  
 </body>
 </html>
